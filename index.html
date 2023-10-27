@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./stylesheets.css">
+    <script>
+        function getname(){
+            const username = document.getElementById('getusername');
+            const name = username.value;
+            const title = document.getElementById('name');
+            title.innerText = name + '  profile';
+        }
+
+        function getpic(){
+            const userpic = document.getElementById('getpic');
+            const pic = userpic.value;
+            const title = document.getElementById('profile');
+            title.style.backgroundImage = "url(" + pic + ")";
+        }
+    </script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="fullpage">
+        <div class="picture">
+            <div class="mainpic">
+                <div id="profile"></div>
+                <div class="noti">
+                    <div class="one">
+                        <p>1</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="username">
+            <h2 id="name">Aun's Gallery</h2>
+        </div>
+        <div class="set">
+            <div class="setuser">
+                <p>Set the username</p>
+                <div class="input">
+                    <input id='getusername' type="text">
+                </div>
+                <div class="submit">    
+                    <button onclick="getname()">set</button>
+                </div>
+            </div>
+            <div class="setpic">
+                <p>Set the Profile Image</p>
+                <div class="input">
+                    <input id='getpic' type="text">
+                </div>
+                <div class="submit">    
+                    <button onclick="getpic()">set</button>
+                </div>  
+            </div>
+        </div>
+        <div class="gridpic">
+            <div class="image1"></div>
+            <div class="image2"></div>
+            <div class="image3"></div>
+            <div class="image4"></div>
+            <div class="image5"></div>
+            <div class="image6"></div>
+            <div class="image7"></div>
+            <div class="image8"></div>
+            <div class="image9"></div>
+            <div class="image10"></div>
+        </div>
+    </div>
+</body>
+</html>
